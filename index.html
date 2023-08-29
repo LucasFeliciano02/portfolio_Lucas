@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Portfolio - Lucas Feliciano</title>
+    </head>
+    <body>
+        
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/remove.bg.png" alt="perfil">  <!-- https://www.remove.bg/upload -->
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Lucas Feliciano</h2>
+                    <h3 class="profile__profession">Graduating Software Engineering</h3>
+                    <!-- <h3 class="profile__profession">Software Developer</h3> -->
+
+                    <ul class="profile__social">
+                        <!--  
+                        <a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        -->
+                        <a href="https://www.linkedin.com/in/lucas-henrique-marques-feliciano-aa5aab222/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/LucasFeliciano02" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+1</h3>
+                        <p class="profile__info-description">
+                            Year making <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+15</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">1</h3>
+                        <p class="profile__info-description">Satisfied <br> customer</p>
+                    </div>
+                </div> 
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/Resume - Lucas Henrique Marques Feliciano.pdf" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="https://api.whatsapp.com/send?phone=+55 (41) 9 8736-9451&text=Hello!" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="mailto:lucas.feliciano02@outlook.com" target="_blank" class="button button__small button__gray">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/send_mail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Django Web</span>
+                                    <h3 class="projects__title">Send Email Form</h3>
+                                    <a href="https://github.com/LucasFeliciano02/SendMail-django" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/nutrilab.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Django Web</span>
+                                    <h3 class="projects__title">Nutritionist management website</h3>
+                                    <a href="https://github.com/LucasFeliciano02/NutriLab-Django" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/freelaway.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Django Web</span>
+                                    <h3 class="projects__title">Hiring freelancers Website</h3>
+                                    <a href="https://github.com/LucasFeliciano02/FreelaWay-Django" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/todo.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Javascript website</span>
+                                    <h3 class="projects__title">To-Do List</h3>
+                                    <a href="https://github.com/LucasFeliciano02/To-Do_List-Js" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/sales_report.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PowerBi Analyze</span>
+                                    <h3 class="projects__title">Sales Report for Product</h3>
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMGQ1YTRmOTgtMzZiNi00ZmI3LWFkZWUtOTkzYTJlMWRjMGVlIiwidCI6IjRlM2JlYjlhLTFjNWQtNDcxMS1hNGFjLWRkNGUwYjlmMzUzNyJ9&pageName=ReportSection" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/sales_product2.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PowerBi Analyze</span>
+                                    <h3 class="projects__title">Sales Report for Product</h3>
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMjQ4Y2U3YjktZTdjYS00NzM4LTlhMGMtMGFmMjVhNDExMWNhIiwidCI6IjRlM2JlYjlhLTFjNWQtNDcxMS1hNGFjLWRkNGUwYjlmMzUzNyJ9&pageName=ReportSection" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/hdc.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Landing Page</span>
+                                    <h3 class="projects__title">Web Agency</h3>
+                                    <a href="https://github.com/LucasFeliciano02/hDC-Agency" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/decor.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Landing Page</span>
+                                    <h3 class="projects__title">Interior Design Event</h3>
+                                    <a href="https://github.com/LucasFeliciano02/InDecor" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/consulting_form.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI - SQLite</span>
+                                    <h3 class="projects__title">Consulting Form App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Consulting_Form-GUI-CRUD" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/library.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI - SQLite</span>
+                                    <h3 class="projects__title">library App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Library-Crud-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/currency_conventer.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI - API</span>
+                                    <h3 class="projects__title">Currency Converter App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Conversor_de_moedas-Gui-Api" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+
+                        <article class="projects__card">
+                            <img src="assets/img/Number_base_converter.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI</span>
+                                    <h3 class="projects__title">Number Base Converter App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Conversor_Bases_Numericas-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>  
+
+                        <article class="projects__card">
+                            <img src="assets/img/password_generator.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI</span>
+                                    <h3 class="projects__title">password generator App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Gerador_de_Senhas-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+
+                        <article class="projects__card">
+                            <img src="assets/img/bmi_calculator.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI</span>
+                                    <h3 class="projects__title">BMI calculator App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Calculadora_IMC-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> 
+
+                        <article class="projects__card">
+                            <img src="assets/img/image_resizer.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI</span>
+                                    <h3 class="projects__title">image resizer App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Redimensionador_Imagem_PyQt5" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>   
+
+                        <article class="projects__card">
+                            <img src="assets/img/color_picker.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI</span>
+                                    <h3 class="projects__title">Color Picker App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/Color_Picker-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>  
+
+                        <article class="projects__card">
+                            <img src="assets/img/to-do_app.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Tkinter GUI - SQLite</span>
+                                    <h3 class="projects__title">to-do App</h3>
+                                    <a href="https://github.com/LucasFeliciano02/To-do-app-Crud-Gui" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>  
+                                                                                                                                                                                    
+                        <!-- <article class="projects__card">
+                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Design</span>
+                                    <h3 class="projects__title">Music app design</h3>
+                                    <a href="#" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> -->
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Backend Development</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>   
+                                         
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Git & GitHub</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Gui Tkinter</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Django</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">SQLite</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Flask Api</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>     
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Fast Api</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Front Development</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                              
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                        
+                                    </div>       
+                                   
+                                    
+                                    <!-- 
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        
+                                        <div>
+                                            <h3 class="skills__name">TypeScript</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                     -->
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        
+                                        
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; Portfolio
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
